@@ -1,0 +1,7 @@
+# Adding a New Frontend
+
+docker container stop movieplex7
+docker container rm movieplex7
+cd ..
+more react-client/Dockerfile
+./add_ee_pwd_host.sh
