@@ -3,6 +3,6 @@ cd javaee-demo
 cd movieplex7
 docker image build -t movieplex7 -f Dockerfile.wildfly .
 docker container run -d -p 8089:8080 --name movieplex7 movieplex7
-apt update
-apt install lynx
+apt update -y
+apt install -y lynx
 lynx https://`hostname -i`:8089/movieplex7-1.0-SNAPSHOT
